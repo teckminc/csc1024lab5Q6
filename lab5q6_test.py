@@ -7,7 +7,7 @@ def test_case1(monkeypatch, capsys):
     monkeypatch.setattr('sys.stdin', number_inputs)
     lab5q6.main()
     captured_stdout, captured_stderr = capsys.readouterr()
-
+    #@todo change the 5.0 to 5
     assert captured_stdout.strip().find(f'[5.0, \'KualaLumpur\', \'Malaysia\', [3.0, -2, \'C\'], 0.5]') != -1
 
 def test_case2(monkeypatch, capsys):
